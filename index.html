@@ -19,12 +19,32 @@
             <h5 class="title">Entre com sua conta</h5>
         </header>
 
-        <form class="form">
-            <input class="input" type="email" placeholder="E-mail" />
-            <input class="input" type="password" placeholder="Senha" />
-            <button class="button">Continue</button>
+        <form class="form" id="login">
+            <input class="input" id="email" type="email" placeholder="E-mail" />
+            <input class="input" id="senha" type="password" placeholder="Senha" />
+            <button class="button" type="submit">Continue</button>
         </form>
     </main>
 </body>
+
+<script>
+    var formulario = document.getElementById('login');
+
+    formulario.addEventListener('submit', function (event) {
+        // previnir o envio padrão do formulário
+        event.preventDefault();
+
+        // buscar inputs pelo id
+        var inputEmail = document.getElementById('email');
+        var inputSenha = document.getElementById('senha');
+
+        // obter os valores digitados nos inputs
+        var inputEmailValor = inputEmail.value;
+        var inputSenhaValor = inputSenha.value;
+
+        // mostrar alerta
+        alert("Seu e-mail é: " + inputEmailValor + " e sua senha é: " + inputSenhaValor);
+    })
+</script>
 
 </html>
