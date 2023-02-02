@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Students</title>
 </head>
 
 <body>
-    <h1>Olá!</h1>
+    <div class="user">
+        <img id="image" />
+        <h1 class="name" id="name"></h1>
+        <p id="repositories"></p>
+        <p id="following"></p>
+        <p id="followers"></p>
+    </div>
 </body>
-<script>
-    var url = new URLSearchParams(window.location.search);
-    var github = url.get('github');
-
-    console.log(github);
-</script>
+<script src="script.js"></script>
 
 </html>

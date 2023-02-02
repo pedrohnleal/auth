@@ -25,7 +25,7 @@ formulario.addEventListener('submit', function (event) {
     var usuarios = [
         {
             email: 'pedrohnleal@gmail.com',
-            password: '123'
+            password: 'admin'
         },
         {
             email: 'joaopmata182@gmail.com',
